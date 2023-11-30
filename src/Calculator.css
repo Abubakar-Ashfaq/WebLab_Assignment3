@@ -1,0 +1,42 @@
+/* Calculator.css */
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .display {
+    background: #444;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+  }
+  
+  button {
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  button.zero {
+    grid-column: span 2;
+  }
+  
+  button:active {
+    background-color: #ccc;
+  }
+  
+  /* Use this for the operation buttons (+, -, *, /) */
+  button:nth-child(4n) {
+    background-color: orange;
+    color: white;
+  }
